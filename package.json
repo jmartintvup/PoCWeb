@@ -1,0 +1,21 @@
+{
+  "name": "poc-auto-web",
+  "version": "1.0.0",
+  "description": "Web Automation Tivify PoC",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress run --spec \"cypress/integration/**/*\"",
+    "jrm": "timestamp=$(date +%Y%m%d%H%M%S) && npx junit-merge ./reports/final_reports/testExecution$timestamp.xml \"reports/*.xml\"",
+    "test": "if [ \"$npm_config_jrm\" = \"true\" ]; then npm run test:jrm; else cypress run --spec \"cypress/integration/**/*\"; fi",
+    "test:jrm": "npx jrm ./reports/final_reports/testExecution$(date +%Y%m%d%H%M%S).xml \"./reports/*.xml\"",
+    "merge-reports": "jrm combined.xml \"results/*.xml\""
+  },
+  "author": "Juan Martin-Roldan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.11.0",
+    "cypress-junit-reporter": "^1.3.1",
+    "cypress-multi-reporters": "^1.6.3",
+    "junit-report-merger": "^6.0.1"
+  }
+}

@@ -1,0 +1,98 @@
+{
+
+    
+    "URLBase": "https://newstage.tivify.tv",
+    "URLLogin": "https://newstage.tivify.tv/login",
+    "URLInicio" :"https://newstage.tivify.tv/inicio",
+    "URLRecordar": "https://newstage.tivify.tv/recordar",
+    "URLRegistro": "https://tivify.es/es/registro/",
+
+    "premium": "j.martinpremium",
+    "plus" : "j.martinplus",
+    "free" : "j.martinfree",
+    "invalidUser":"Asdasdfasd",
+    "contraseñaCorrecta": "Stage2022",
+    "contraseñaIncorrecta" : "iajshdakhghdkajsghdf",
+    "mailValido":"1234@pruebas.com",
+
+
+    "llamadaLogin":"https://apistage.tvup.cloud/v4/auth/loginB2C/*",
+    
+    "llamadaUnpair":"https://apistage.tvup.cloud/device/unpair/*",
+
+    "llamadaRecordar":"https://apistage.tvup.cloud/user/resetPass/",
+    
+    "llamadaPubli":"https://tv.springserve.com/*",
+    
+
+
+
+
+
+  
+
+
+    "formatoMailCorrectoNormal" : [
+
+        "email@example.com",
+        "firstname.lastname@example.com",
+        "email@subdomain.example.com",
+        "firstname+lastname@example.com",
+        "email@123.123.123.123",
+        "email@[123.123.123.123]",
+        "email@example.com",
+        "1234567890@example.com",
+        "email@example-one.com",
+        "_______@example.com",
+        "email@example.name",
+        "email@example.museum",
+        "email@example.co.jp",
+        "firstname-lastname@example.com"
+
+    ],
+
+    "formatoMailCorrectoRaro": [
+        
+        "much.'more/unusual'@example.com",
+        "very.unusual.'@''.unusual.com@example.com",
+        "very.'(),:;<>[]''.VERY.”very@\\ 'very'.unusual@strange.example.com"
+    ],
+
+
+    "formatoMailIncorrecto": [
+
+        "plainaddress",
+        "#@%^%#$@#$@#.com",
+        "@example.com",
+        "Joe Smith <email@example.com>",
+        "email.example.com",
+        "email@example@example.com",
+        "”.email@example.com",
+        "email.@example.com",
+        "email..email@example.com",
+        "あいうえお@example.com",
+        "email@example.com (Joe Smith)",
+        "email@example",
+        "email@-example.com",
+        "email@example.web",
+        "email@111.222.333.44444",
+        "email@example..com",
+        "Abc..123@example.com"
+    ],
+
+    "formatoMailIncorrectoRaro": [
+                
+        "'(),:;<>[@example.com",
+        "just”not”right@example.com",
+        "this/ is'really'not/allowed@example.com"
+
+    ],
+
+    "dateOfBirth": "1997-05-28",
+    "product": "Blackberry",
+    "productArray": ["Blackberry", "iphone X", "Nokia"],
+    "body": "Fixtures are a great way to mock data for responses to routes"
+
+
+
+  }
